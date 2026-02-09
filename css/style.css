@@ -1,0 +1,146 @@
+/* Reset & global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f4f8;
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+  border-bottom: 3px solid #0d6efd;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  color: #0d6efd;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+header p {
+  color: #555;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #0d6efd;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, scale 0.3s;
+}
+
+nav a:hover {
+  color: #0a58ca;
+  transform: scale(1.05);
+}
+
+/* Main sections */
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.card {
+  background: #ffffff;
+  border-left: 5px solid #0d6efd;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: #0d6efd;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+p, ul {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  padding-left: 18px;
+  position: relative;
+}
+
+ul li::before {
+  content: "➤";
+  color: #0d6efd;
+  position: absolute;
+  left: 0;
+}
+
+/* Footer */
+footer {
+  background-color: #0d6efd;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+/* Buttons (optional) */
+button {
+  padding: 10px 20px;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #0a58ca;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav a {
+    margin: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  .card {
+    padding: 20px;
+    margin: 15px;
+  }
+}
